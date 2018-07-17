@@ -34,3 +34,5 @@ function mapStateToProps( state ) {
     downPayment
   };
 }
+
+export default connect( mapStateToProps, { updateCost, updateDownPayment } )( WizardSix );
