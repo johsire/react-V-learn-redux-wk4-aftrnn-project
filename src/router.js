@@ -16,6 +16,26 @@ import NextBtn from './components/NextBtn/NextBtn';
 import { HashRouter, Route } from 'react-router-dom';
 
 
+const initialState = {
+    loanType: 'Home Purchase',
+    propertType: 'Single Family Home',
+    city: '',
+    propToBeUsedOn: '',
+    found: "false",
+    realEstateAgent: "false",
+    cost: 0,
+    downPayment: 0,
+    credit: '',
+    history: '',
+    addressOne: '',
+    addressTwo: '',
+    addressThree: '',
+    firstName: '',
+    lastName: '',
+    email: ''
+}
+
+
 export default (
     <HashRouter>
 

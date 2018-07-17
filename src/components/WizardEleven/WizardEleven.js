@@ -149,5 +149,4 @@ function mapStateToProps(staet) {
     };
 }
 
-
 export default connect(mapStateToProps) (WizardEleven);
