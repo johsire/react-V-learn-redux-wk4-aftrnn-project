@@ -14,6 +14,7 @@ import Finish from './components/Finish/Finish';
 
 import NextBtn from './components/NextBtn/NextBtn';
 import { HashRouter, Route } from 'react-router-dom';
+import reducer from './ducks/reducer';
 
 
 const initialState = {
@@ -33,6 +34,11 @@ const initialState = {
     firstName: '',
     lastName: '',
     email: ''
+}
+
+function reducer(state = initialState, action) {
+    const  UPDATE_LOAN_TYPE = "UPDATE_LOAN_TYPE";
+    CONSR   UPDATE_PROPERTY_TYPE = "UPDATE_PROPERTY_TYPE"
 }
 
 
