@@ -36,11 +36,19 @@ const initialState = {
     email: ''
 }
 
-const  UPDATE_LOAN_TYPE = "UPDATE_LOAN_TYPE";
-CONSR   UPDATE_PROPERTY_TYPE = "UPDATE_PROPERTY_TYPE"
+const UPDATE_LOAN_TYPE = "UPDATE_LOAN_TYPE";
+const UPDATE_PROPERTY_TYPE = 'UPDATE_PROPERTY_TYPE';
 
 function reducer(state = initialState, action) {
-   
+   switch(action.type) {
+       case UPDATE_LOAN_TYPE:
+            return Object,assigbn=({}, state, { loanType: action.payload });
+
+        case  UPDATE_PROPERTY_TYPE:
+            return Object,assigbn=({}, state, { loanType: action.payload });
+
+        default: return state;     
+   }
 }
 
 
