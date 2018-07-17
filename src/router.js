@@ -36,9 +36,11 @@ const initialState = {
     email: ''
 }
 
+const  UPDATE_LOAN_TYPE = "UPDATE_LOAN_TYPE";
+CONSR   UPDATE_PROPERTY_TYPE = "UPDATE_PROPERTY_TYPE"
+
 function reducer(state = initialState, action) {
-    const  UPDATE_LOAN_TYPE = "UPDATE_LOAN_TYPE";
-    CONSR   UPDATE_PROPERTY_TYPE = "UPDATE_PROPERTY_TYPE"
+   
 }
 
 
