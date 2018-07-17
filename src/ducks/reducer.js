@@ -1,4 +1,5 @@
 
+import { React } from 'react';
 const initialState = {
   loanType: 'Home Purchase',
   propertyType: 'Single Family Home',
@@ -24,19 +25,24 @@ const UPDATE_PROPERTY_TYPE = 'UPDATE_PROPERTY_TYPE';
 const UPDATE_CITY = 'UPDATE_CITY';
 
 
-// ACTION CREATORS:
+// REDUCER:- updates each case value on state with the values set on the action's payload
+// To keep the state immutable we use Obj.assign;
 function reducer( state = initialState, action ){ 
    switch( action.type ){
      case UPDATE_LOAN_TYPE:
-         return Object.assign( {}, state, { loanType: action.payload } );
+         return Object.assign( {}, state, { loanType: action.payload });
 
      case UPDATE_PROPERTY_TYPE:
-         return Object.assign( {}, state, { propertyType: action.payload } );
+         return Object.assign( {}, state, { propertyType: action.payload });
+
+     case UPDATE_CITY:
+          return Object.assign( {}, state, { city: action.payload });  
 
      default: return state;
    }
 } 
 
+// ACTION CREATORS:
 export function updateLoanType( loanType ){
  return {
    type: UPDATE_LOAN_TYPE,
